@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="repeat_weekly">Repeat Weekly</string>
+    <string name="next_alarm">Next Alarm</string>
+    <string name="lastAlarmText">Last Alarm</string>
+    <string name="new_alarm">New</string>
+    <string name="quick_alarm">Quick</string>
+    <string name="labelHint">Label</string>
+    <string name="vibrate">Vibrate</string>
+    <string name="alarm_tone_sub_text">To be set at runtime</string>
+    <string name="alarm_tone_text">Alarm tone</string>
+    <string name="interval_text">Interval</string>
+    <string name="interval_sub_text">Ring every (in mins)</string>
+    <string name="switch_off_text">OFF</string>
+    <string name="switch_on_text">ON</string>
+    <string name="notify_next_alarm_sub_text">Default 1 hr</string>
+    <string name="notify_upcoming_text">Upcoming Alarm Notification</string>
+    <string name="ascending_volume_text">Gradually increase volume</string>
+    <string name="alarm_text">Alarm</string>
+</resources>

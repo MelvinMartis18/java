@@ -1,0 +1,73 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/alarmActionLinearLayout"
+    android:background="@android:color/black"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:focusableInTouchMode="true"
+    android:weightSum="7"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/alarmTimeLinearLayout"
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_weight="3"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/alarmText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/alarm_text"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/alarmTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:fontFamily="sans-serif-light"
+            android:text="06:00"
+            android:textSize="80sp" />
+
+        <TextView
+            android:id="@+id/alarmDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:fontFamily="sans-serif-light"
+            android:textSize="25sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:layout_gravity="center"
+        android:gravity="bottom|center">
+
+        <com.application.essentials.SlideButton
+            android:id="@+id/slideButton"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="60dp"
+            android:clickable="false"
+            android:max="100"
+            android:progress="10"
+            android:progressDrawable="@drawable/seekbar_drawable_progress"
+            android:thumb="@drawable/btn_thumb_slide"
+            android:background="@null"
+            android:splitTrack="false">
+        </com.application.essentials.SlideButton>
+    </LinearLayout>
+</LinearLayout>

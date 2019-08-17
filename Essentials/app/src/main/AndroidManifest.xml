@@ -1,0 +1,65 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.application.essentials">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_2"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+
+        <activity
+            android:name="com.application.essentials.MainActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustNothing">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"
+                    android:theme="@style/AppTheme"/>
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.application.essentials.SetAlarmActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/app_name">
+        </activity>
+
+        <activity android:name="com.application.essentials.AlarmActionActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/app_name">
+        </activity>
+
+
+
+        <receiver android:name="com.application.essentials.AlarmReceiverWeekly" android:process=":remote" />
+        <receiver android:name="com.application.essentials.AlarmReceiverInterval" android:process=":remote" />
+        <receiver android:name="com.application.essentials.AlarmReceiverEndTime" android:process=":remote" />
+        <receiver android:name="com.application.essentials.NotificationReceiver" android:process=":remote" />
+        <receiver android:name="com.application.essentials.UpcomingAlarmBroadcastReceiver" android:process=":remote" />
+        <receiver android:name="com.application.essentials.UpcomingNotificationReceiver" android:process=":remote" />
+        <receiver android:name="com.application.essentials.AlarmReceiverWakeUp" android:process=":remote" />
+
+        <!--<activity-->
+            <!--android:name="com.application.essentials.AlarmsFragment">-->
+        <!--</activity>-->
+
+        <!--<activity-->
+            <!--android:name="com.application.essentials.MemoFragment">-->
+        <!--</activity>-->
+
+        <!--<activity-->
+            <!--android:name="com.application.essentials.TodoFragment">-->
+        <!--</activity>-->
+
+        <!--<activity-->
+            <!--android:name="com.application.essentials.TabsPagerAdapter">-->
+        <!--</activity>-->
+    </application>
+</manifest>

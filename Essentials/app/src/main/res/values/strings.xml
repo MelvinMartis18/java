@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Essentials</string>
+    <string name="colon">:</string>
+    <string-array name="SpinnerWakeUpInHoursList">
+        <item>0 hour(s)</item>
+        <item>1 hour</item>
+        <item>2 hours</item>
+        <item>3 hours</item>
+        <item>4 hours</item>
+        <item>5 hours</item>
+        <item>6 hours</item>
+        <item>7 hours</item>
+        <item>8 hours</item>
+    </string-array>
+
+    <string-array name="SpinnerWakeUpInMinsList">
+        <item>0 min(s)</item>
+        <item>15 mins</item>
+        <item>20 mins</item>
+        <item>30 mins</item>
+        <item>45 mins</item>
+    </string-array>
+</resources>
